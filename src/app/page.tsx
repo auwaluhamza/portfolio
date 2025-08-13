@@ -48,7 +48,7 @@ export default function Home() {
 
   const projects = [
     {
-      title: 'Logistics & Shipment Management SaaS',
+      title: 'Logistics & Shipment Management SaaS Platform',
       description: 'Designed and built a comprehensive SaaS platform for logistics companies with shipment tracking, order management, accounting, and documentation systems',
       tech: ['Laravel', 'MySQL', 'Docker', 'Typesense', 'Real-time Updates'],
       link: '#',
@@ -57,7 +57,7 @@ export default function Home() {
       slug: 'logistics-shipment-management-saas'
     },
     {
-      title: 'E-commerce Multi-Merchant Platform',
+      title: 'Multi-Merchant E-commerce Platform with COD & Shipping Integration',
       description: 'Comprehensive e-commerce platform with multi-merchant support, shipping integration, and advanced order management system',
       tech: ['Laravel 10', 'MySQL', 'Multi-tenant Architecture', 'Shipping APIs', 'WhatsApp Integration'],
       link: '#',
@@ -66,7 +66,7 @@ export default function Home() {
       slug: 'e-commerce-multi-merchant-platform'
     },
     {
-      title: 'Hospital Management System',
+      title: 'Hospital Management System with Role-Based Dashboards',
       description: 'Built comprehensive role-based dashboards for hospital directorates with custom reporting, access control, and streamlined operations',
       tech: ['Laravel', 'MySQL', 'Role-based Access', 'Custom Dashboards'],
       link: '#',
@@ -75,7 +75,7 @@ export default function Home() {
       slug: 'hospital-management-system'
     },
     {
-      title: 'Hotel Booking Platform',
+      title: 'Hotel Booking Platform with Performance Optimization',
       description: 'Maintained and optimized commercial hotel booking application with improved performance, database optimization, and enhanced API endpoints',
       tech: ['Laravel', 'MySQL', 'API Development', 'Performance Optimization'],
       link: '#',

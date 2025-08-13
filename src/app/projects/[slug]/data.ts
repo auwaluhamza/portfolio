@@ -1,7 +1,7 @@
 // Project data - in a real app, this would come from a CMS or database
 export const projectData = {
   'logistics-shipment-management-saas': {
-    title: 'Logistics & Shipment Management SaaS',
+    title: 'Logistics & Shipment Management SaaS Platform',
     role: 'Fullstack Developer & System Architect',
     duration: '6 months',
     team: '3 developers',
@@ -43,7 +43,7 @@ Key challenges included designing a scalable architecture that could handle mult
     live: '#'
   },
   'e-commerce-multi-merchant-platform': {
-    title: 'E-commerce Multi-Merchant Platform',
+    title: 'Multi-Merchant E-commerce Platform with COD & Shipping Integration',
     role: 'Full Stack Developer',
     duration: '10 months',
     team: '3 developers',
@@ -95,7 +95,7 @@ Key features include multi-tenant architecture for multiple merchants, integrati
     live: '#'
   },
   'hospital-management-system': {
-    title: 'Hospital Management System',
+    title: 'Hospital Management System with Role-Based Dashboards',
     role: 'Full Stack Developer',
     duration: '8 months',
     team: '4 developers',
@@ -139,7 +139,7 @@ The project required deep understanding of hospital workflows and regulatory req
     live: '#'
   },
   'hotel-booking-platform': {
-    title: 'Hotel Booking Platform',
+    title: 'Hotel Booking Platform with Performance Optimization',
     role: 'PHP Developer',
     duration: '12 months',
     team: '6 developers',
