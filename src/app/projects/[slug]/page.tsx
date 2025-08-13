@@ -1,6 +1,7 @@
 'use client';
 
 import { useParams, useRouter } from 'next/navigation';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
   ArrowLeft, 
@@ -13,12 +14,26 @@ import {
   CheckCircle
 } from 'lucide-react';
 import { projectData } from './data';
+import ImageLightbox from '@/components/ImageLightbox';
 
 export default function ProjectDetail() {
   const params = useParams();
   const router = useRouter();
   const slug = params.slug as string;
   const project = projectData[slug as keyof typeof projectData];
+  
+  // Lightbox state
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
+  const openLightbox = (index: number) => {
+    setSelectedImageIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
 
   if (!project) {
     return (
@@ -161,20 +176,32 @@ export default function ProjectDetail() {
                 <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">Screenshots</h2>
                 <div className="grid md:grid-cols-2 gap-6">
                   {project.screenshots.map((screenshot, index) => (
-                    <div key={index} className="bg-slate-100 dark:bg-slate-800 rounded-lg overflow-hidden shadow-lg">
-                      <img 
-                        src={screenshot} 
-                        alt={`${project.title} screenshot ${index + 1}`}
-                        className="w-full h-auto object-cover"
-                        onError={(e) => {
-                          // Fallback to placeholder if image fails to load
-                          const target = e.target as HTMLImageElement;
-                          target.style.display = 'none';
-                          target.nextElementSibling?.classList.remove('hidden');
-                        }}
-                      />
-                      <div className="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center hidden">
-                        <Globe className="w-12 h-12 text-white" />
+                    <div 
+                      key={index} 
+                      className="bg-slate-100 dark:bg-slate-800 rounded-lg overflow-hidden shadow-lg cursor-pointer hover:shadow-xl transition-shadow group"
+                      onClick={() => openLightbox(index)}
+                    >
+                      <div className="relative">
+                        <img 
+                          src={screenshot} 
+                          alt={`${project.title} screenshot ${index + 1}`}
+                          className="w-full h-auto object-cover transition-transform group-hover:scale-105"
+                          onError={(e) => {
+                            // Fallback to placeholder if image fails to load
+                            const target = e.target as HTMLImageElement;
+                            target.style.display = 'none';
+                            target.nextElementSibling?.classList.remove('hidden');
+                          }}
+                        />
+                        <div className="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center hidden">
+                          <Globe className="w-12 h-12 text-white" />
+                        </div>
+                        {/* Overlay with click hint */}
+                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                          <div className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-sm font-medium">
+                            Click to view larger
+                          </div>
+                        </div>
                       </div>
                       <p className="text-sm text-slate-500 dark:text-slate-400 mt-2 text-center p-4">
                         Screenshot {index + 1}
@@ -240,6 +267,14 @@ export default function ProjectDetail() {
           </div>
         </div>
       </section>
+
+      {/* Image Lightbox */}
+      <ImageLightbox
+        images={project.screenshots}
+        initialIndex={selectedImageIndex}
+        isOpen={lightboxOpen}
+        onClose={closeLightbox}
+      />
     </div>
   );
 } 
