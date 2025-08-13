@@ -4,8 +4,9 @@ import { projectData } from './data';
 
 export { generateStaticParams };
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const project = projectData[params.slug as keyof typeof projectData];
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const project = projectData[slug as keyof typeof projectData];
   
   if (!project) {
     return {
