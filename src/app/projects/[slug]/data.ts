@@ -33,11 +33,11 @@ Key challenges included designing a scalable architecture that could handle mult
       'Integrated Typesense for fast search capabilities'
     ],
     screenshots: [
-      'images/logistics/Screenshot from 2025-08-13 21-06-56.png',
-      'images/logistics/Screenshot from 2025-08-13 21-07-02.png',
-      'images/logistics/Screenshot from 2025-08-13 21-07-09.png',
-      'images/logistics/Screenshot from 2025-08-13 21-07-38.png',
-      'images/logistics/Screenshot from 2025-08-13 21-07-57.png'
+      '/portfolio/images/logistics/Screenshot from 2025-08-13 21-06-56.png',
+      '/portfolio/images/logistics/Screenshot from 2025-08-13 21-07-02.png',
+      '/portfolio/images/logistics/Screenshot from 2025-08-13 21-07-09.png',
+      '/portfolio/images/logistics/Screenshot from 2025-08-13 21-07-38.png',
+      '/portfolio/images/logistics/Screenshot from 2025-08-13 21-07-57.png'
     ],
     github: '#',
     live: '#'
@@ -86,10 +86,10 @@ Key features include multi-tenant architecture for multiple merchants, integrati
       'Implemented caching strategies and query optimization'
     ],
     screenshots: [
-      'images/cod/Screenshot from 2025-08-13 20-46-59.png',
-      'images/cod/Screenshot from 2025-08-13 20-47-18.png',
-      'images/cod/Screenshot from 2025-08-13 20-47-44.png',
-      'images/cod/Screenshot from 2025-08-13 20-48-40.png'
+      '/portfolio/images/cod/Screenshot from 2025-08-13 20-46-59.png',
+      '/portfolio/images/cod/Screenshot from 2025-08-13 20-47-18.png',
+      '/portfolio/images/cod/Screenshot from 2025-08-13 20-47-44.png',
+      '/portfolio/images/cod/Screenshot from 2025-08-13 20-48-40.png'
     ],
     github: '#',
     live: '#'
@@ -127,13 +127,13 @@ The project required deep understanding of hospital workflows and regulatory req
       'Optimized database for medical data queries'
     ],
     screenshots: [
-      'images/kshmb/Screenshot from 2025-08-13 21-08-05.png',
-      'images/kshmb/Screenshot from 2025-08-13 21-08-12.png',
-      'images/kshmb/Screenshot from 2025-08-13 21-08-19.png',
-      'images/kshmb/Screenshot from 2025-08-13 21-08-26.png',
-      'images/kshmb/Screenshot from 2025-08-13 21-08-33.png',
-      'images/kshmb/Screenshot from 2025-08-13 21-08-40.png',
-      'images/kshmb/Screenshot from 2025-08-13 21-08-47.png'
+      '/portfolio/images/kshmb/Screenshot from 2025-08-13 21-08-05.png',
+      '/portfolio/images/kshmb/Screenshot from 2025-08-13 21-08-12.png',
+      '/portfolio/images/kshmb/Screenshot from 2025-08-13 21-08-19.png',
+      '/portfolio/images/kshmb/Screenshot from 2025-08-13 21-08-26.png',
+      '/portfolio/images/kshmb/Screenshot from 2025-08-13 21-08-33.png',
+      '/portfolio/images/kshmb/Screenshot from 2025-08-13 21-08-40.png',
+      '/portfolio/images/kshmb/Screenshot from 2025-08-13 21-08-47.png'
     ],
     github: '#',
     live: '#'
@@ -171,11 +171,11 @@ The platform needed to handle high traffic during peak booking seasons while mai
       'Implemented caching strategies for better performance'
     ],
     screenshots: [
-      'images/hng/hotelsng_homepage.png',
-      'images/hng/hotelsng_homepage_2.png',
-      'images/hng/hotelsng_booking_page.png',
-      'images/hng/hotelsng_hotel_page.png',
-      'images/hng/hotelsng_listing_page.png'
+      '/portfolio/images/hng/hotelsng_homepage.png',
+      '/portfolio/images/hng/hotelsng_homepage_2.png',
+      '/portfolio/images/hng/hotelsng_booking_page.png',
+      '/portfolio/images/hng/hotelsng_hotel_page.png',
+      '/portfolio/images/hng/hotelsng_listing_page.png'
     ],
     github: '#',
     live: '#'
