@@ -319,7 +319,7 @@ export default function Home() {
                   </div>
                   <div className="flex gap-3">
                     <a
-                      href={`/projects/${project.slug}`}
+                      href={`${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/projects/${project.slug}/`}
                       className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors font-medium"
                     >
                       <ExternalLink className="w-4 h-4" />
