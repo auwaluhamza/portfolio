@@ -368,7 +368,7 @@ export default function Home() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://linkedin.com/in/auwaluhamza"
+                href="https://www.linkedin.com/in/auwalu-hamza"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 px-8 py-3 rounded-lg font-semibold flex items-center justify-center gap-2"
