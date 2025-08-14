@@ -57,7 +57,7 @@ export default function Home() {
       slug: 'logistics-shipment-management-saas'
     },
     {
-      title: 'Multi-Merchant E-commerce Platform with COD & Shipping Integration',
+      title: 'Multi-Merchant E-commerce Platform',
       description: 'Comprehensive e-commerce platform with multi-merchant support, shipping integration, and advanced order management system',
       tech: ['Laravel 10', 'MySQL', 'Multi-tenant Architecture', 'Shipping APIs', 'WhatsApp Integration'],
       link: '#',
@@ -66,7 +66,7 @@ export default function Home() {
       slug: 'e-commerce-multi-merchant-platform'
     },
     {
-      title: 'Hospital Management System with Role-Based Dashboards',
+      title: 'Hospital Management System',
       description: 'Built comprehensive role-based dashboards for hospital directorates with custom reporting, access control, and streamlined operations',
       tech: ['Laravel', 'MySQL', 'Role-based Access', 'Custom Dashboards'],
       link: '#',
@@ -75,7 +75,7 @@ export default function Home() {
       slug: 'hospital-management-system'
     },
     {
-      title: 'Hotel Booking Platform with Performance Optimization',
+      title: 'Hotel Booking Platform',
       description: 'Maintained and optimized commercial hotel booking application with improved performance, database optimization, and enhanced API endpoints',
       tech: ['Laravel', 'MySQL', 'API Development', 'Performance Optimization'],
       link: '#',
@@ -359,7 +359,7 @@ export default function Home() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="mailto:auwalu.hamza@example.com"
+                href="mailto:auwalufalaluhamza@gmail.com"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold flex items-center justify-center gap-2"
               >
                 <Mail className="w-5 h-5" />
@@ -379,7 +379,7 @@ export default function Home() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://github.com/auwaluhamza"
+                href="https://github.com/afhamu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800 px-8 py-3 rounded-lg font-semibold flex items-center justify-center gap-2"
